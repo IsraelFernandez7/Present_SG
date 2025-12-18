@@ -68,10 +68,13 @@ const message =
 
 Walmart’s letters were mid, so I decided to make you one the only way I know how :)
 
-We haven’t known each other for very long, but these past few weeks have been a complete blur in the best way. I found that your eyes and beauty is agressivley hypnotic so if you think about it, you're to blame whenever I randomly stare at you. 
+We haven’t known each other for very long, but these past few weeks have been a complete blur in the best way.
 
-As Elvis said, “Only fools rush in.” You call me dumb a lot, but I like to think it’s because I told you about that song.
-And if that makes me a fool, I’m happy to be your fool ❤️. Thinking of what to write took the longest. What I feel for you is hard to explain, but it feels easy when I’m with you.
+I found that your eyes and beauty is agressivley hypnotic so if you think about it, you're to blame whenever I randomly stare at you. 
+
+As Elvis said, “Only fools rush in.” You call me dumb a lot, but I like to think it’s because I told you about that song. And if that makes me a fool, I’m happy to be your fool ❤️. 
+
+Thinking of what to write took the longest. What I feel for you is hard to explain, but it feels easy when I’m with you.
 
 P.S. I know you've been asking for a goat so I included one on the footer.
 
