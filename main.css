@@ -132,7 +132,7 @@ body{
 }
 
 .env-front{
-  z-index:4;
+  /*z-index:4;*/
   pointer-events:none;
 }
 
@@ -141,7 +141,7 @@ body{
   position:absolute;
   inset:0;
   border-radius:18px;
-  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+  background: linear-gradient(180deg, rgb(193, 164, 125), rgba(193, 164, 125));
   border: 1px solid rgba(255,255,255,.14);
 }
 
@@ -194,9 +194,10 @@ body{
 .env-paper{
   position:absolute;
   left:50%;
-  bottom:34px;
+  margin-top: 180px;
+  /*bottom:34px;*/
   width:88%;
-  height:92%;
+  height:180%;
   transform: translateX(-50%);
   z-index:2;
   border-radius:14px;
@@ -208,6 +209,7 @@ body{
   /* starts "inside" */
   transform: translateX(-50%) translateY(42%);
   transition: transform 1100ms cubic-bezier(.12,.92,.18,1);
+  opacity: 0;
 }
 
 .paper-inner{
@@ -247,7 +249,6 @@ body{
 .paper-body{
   padding:16px 18px;
   font-size:16px;
-  line-height:1.55;
   flex:1;
 }
 
@@ -275,12 +276,8 @@ body{
 }
 
 .paper-foot{
-  padding:12px 18px 16px;
   display:flex;
-  gap:10px;
   justify-content:center;
-  border-top: 1px solid rgba(0,0,0,.08);
-  opacity:.85;
 }
 
 .orn{ filter: drop-shadow(0 6px 10px rgba(0,0,0,.20)); }
@@ -313,48 +310,12 @@ body{
 }
 
 .envelope.open .env-paper{
-  transform: translateX(-50%) translateY(-10%);
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 100;
 }
 
-/* little festive shine */
-.envelope::after{
-  content:"";
-  position:absolute;
-  inset:-2px;
-  border-radius:20px;
-  background: linear-gradient(120deg, transparent 20%, rgba(246,196,83,.28), transparent 60%);
-  opacity:.0;
-  transform: translateX(-30%);
-  transition: opacity .5s ease;
-  pointer-events:none;
-}
 .envelope.open::after{
   opacity:1;
   animation: shine 1.2s ease;
 }
-@keyframes shine{
-  from{ transform: translateX(-40%); }
-  to{ transform: translateX(40%); }
-}
 
-/* Sparkles */
-.sparkles{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index:10;
-}
-
-.sparkle{
-  position:absolute;
-  width:10px; height:10px;
-  border-radius:50%;
-  background: radial-gradient(circle, rgba(255,255,255,.95), rgba(246,196,83,.65), transparent 70%);
-  filter: blur(.2px);
-  animation: pop 900ms ease-out forwards;
-}
-@keyframes pop{
-  0%{ transform: scale(.4); opacity:0; }
-  12%{ opacity:1; }
-  100%{ transform: translate(var(--dx), var(--dy)) scale(0); opacity:0; }
-}
