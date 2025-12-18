@@ -1,11 +1,69 @@
-!DOCTYPE html
-html
-head
-  meta charset=UTF-8
-  titleFun Projecttitle
-head
-body
-  h1Hello world 👋h1
-  pThis is hosted on GitHub Pages.p
-body
-html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎄 A Christmas Letter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Snow canvas -->
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <!-- Background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="scene">
+    <header class="top">
+      <div class="badge">🎁 Merry Christmas</div>
+      <div class="hint">Click the envelope to open</div>
+    </header>
+
+    <section class="stage" aria-label="Christmas letter">
+      <div id="envelope" class="envelope" role="button" tabindex="0" aria-pressed="false" aria-label="Open letter">
+        <div class="env-shadow"></div>
+
+        <div class="env-back"></div>
+        <div class="env-paper" id="paper">
+          <div class="paper-inner">
+            <div class="paper-head">
+              <div class="stamp" aria-hidden="true">🎄</div>
+              <div class="title">A Little Christmas Note</div>
+              <div class="sub">To you, from me ✨</div>
+            </div>
+
+            <div class="paper-body">
+              <p id="typed" class="typed" aria-live="polite"></p>
+              <p class="signature">
+                <span class="sig-line"></span>
+                <span class="sig-name">— Israel</span>
+              </p>
+            </div>
+
+            <div class="paper-foot" aria-hidden="true">
+              <span class="orn">❄️</span><span class="orn">⭐</span><span class="orn">🦌</span><span class="orn">🍪</span><span class="orn">🧦</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="env-front">
+          <div class="env-flap" id="flap"></div>
+          <div class="seal" aria-hidden="true">
+            <div class="seal-ring"></div>
+            <div class="seal-center">🎅</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sparkles" class="sparkles" aria-hidden="true"></div>
+    </section>
+
+    <footer class="bottom">
+      <button id="toggleSnow" class="btn" type="button">Toggle Snow</button>
+      <button id="replay" class="btn" type="button">Replay</button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
